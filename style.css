@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.subBody {
+  width: 65vw;
+  margin: 0 auto;
+}
+header {
+  background-color: lightcoral;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav menu {
+  display: flex;
+  flex-direction: column;
+  gap: px;
+  align-items: flex-end;
+}
+
+menu ul {
+  display: flex;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+menu li {
+  list-style: none;
+}
+
+main {
+  padding: 25px;
+}
+fieldset {
+  padding: 10px;
+}
+
+fieldset > * {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+fieldset button {
+  padding: 5px 10px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.car-card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carImg {
+  width: 100px;
+  height: auto;
+  align-self: center;
+}
+.carDescription {
+  margin-bottom: 15px;
+}
+
+.ulCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.list-param {
+  list-style: none;
+}

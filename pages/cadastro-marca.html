@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Marca</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="subBody">
+      <header>
+        <h1>Cadastro de Marca</h1>
+        <nav>
+          <menu>
+            <ul>
+              <a href="../index.html">
+                <li>início</li>
+              </a>
+              <a href="cadastro-marca.html">
+                <li>marca</li>
+              </a>
+              <a href="cadastro-modelo.html">
+                <li>modelo</li>
+              </a>
+              <a href="cadastro-veiculo.html">
+                <li>veículo</li>
+              </a>
+            </ul>
+          </menu>
+        </nav>
+      </header>
+      <main>
+        <form action="#">
+          <fieldset>
+            <legend>Cadastro de marcas de veículos</legend>
+            <label for="marca"
+              >Marca a ser cadastrada:
+              <input type="text" name="marca" id="marca" required />
+            </label>
+            <button type="submit" class="btn btnMarca">cadastrar marca</button>
+          </fieldset>
+        </form>
+        <section>
+          <h2>Marcas Cadastradas:</h2>
+          <ul class="marcasCadastradas"></ul>
+        </section>
+      </main>
+    </div>
+    <script src="../javascript/cadastro-marca.js"></script>
+  </body>
+</html>
