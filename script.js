@@ -1,22 +1,3 @@
-// const veiculosCadastrados = [
-//   {
-//     marca: "gm",
-//     modelo: "prisma",
-//     cor: "branca",
-//     ano: 2016,
-//     km: 15000,
-//     valor: 50000,
-//   },
-//   {
-//     marca: "ford",
-//     modelo: "fiesta",
-//     cor: "azul",
-//     ano: 2018,
-//     km: 15000,
-//     valor: 50000,
-//   },
-// ];
-
 const veiculosCadastrados = JSON.parse(
   localStorage.getItem("veiculosCadastradosStorage")
 );
@@ -27,10 +8,10 @@ for (const carro of veiculosCadastrados) {
   console.log(carro);
   const divCard = document.createElement("div");
   divCard.className = "car-card";
-  const image = document.createElement('img')
-  image.src = carro.img
-  image.className = 'carImg'
-  
+  const image = document.createElement("img");
+  image.src = carro.img;
+  image.className = "carImg";
+
   const carDescriptionElem = document.createElement("h2");
   carDescriptionElem.className = "carDescription";
   carDescriptionElem.innerText = `${
@@ -63,7 +44,7 @@ for (const carro of veiculosCadastrados) {
   // km.innerText = carro.km
   // const valor = document.createElement('li')
   // valor.innerText = carro.valor
-divCard.appendChild(image)
+  divCard.appendChild(image);
   divCard.appendChild(carDescriptionElem);
   divCard.appendChild(ulAtrib);
   sectionCardContainer.appendChild(divCard);
