@@ -36,16 +36,14 @@ for (const carro of veiculosCadastrados) {
     ulAtrib.appendChild(parametro);
   }
 
-  // const cor = document.createElement('li')
-  // cor.innerText = carro.cor
-  // const ano = document.createElement('li')
-  // ano.innerText = carro.ano
-  // const km = document.createElement('li')
-  // km.innerText = carro.km
-  // const valor = document.createElement('li')
-  // valor.innerText = carro.valor
+  const btnComprar = document.createElement("button");
+  btnComprar.innerHTML = "Comprar";
+  btnComprar.type = "button";
+  btnComprar.className = "btnComprar";
+
   divCard.appendChild(image);
   divCard.appendChild(carDescriptionElem);
   divCard.appendChild(ulAtrib);
+  divCard.appendChild(btnComprar);
   sectionCardContainer.appendChild(divCard);
 }

@@ -1,14 +1,19 @@
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .subBody {
   width: 65vw;
+  height: 85vh;
   margin: 0 auto;
+  background-color: lightblue;
+  border-radius: 10px;
 }
 header {
   background-color: lightcoral;
+  border-radius: 10px 10px 0 0;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -30,11 +35,28 @@ nav menu {
 menu ul {
   display: flex;
   margin-right: 20px;
-  gap: 20px;
+  gap: 10px;
+  justify-content: stretch;
+  align-items:center; 
+  padding-top: 20px
 }
 
 menu li {
   list-style: none;
+}
+menu a {  
+  width: 80px;
+  height: 30px;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
+  text-transform: uppercase
+}
+menu a:hover{
+  background-color:#a85a5a;
 }
 
 main {
@@ -60,29 +82,40 @@ fieldset button {
   flex-wrap: wrap;
 }
 .car-card {
-  width: 200px;
-  height: 200px;
-  border: 1px solid red;
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  background-color: #2596be;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 3px 5px 2px #0007;
 }
 
 .carImg {
-  width: 100px;
+  width: 125px;
   height: auto;
   align-self: center;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 .carDescription {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .ulCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 8px;
+  margin-bottom: 10px
 }
 
 .list-param {
   list-style: none;
+}
+
+.btnComprar {
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: bold;
 }
